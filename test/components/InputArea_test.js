@@ -2,13 +2,13 @@ import React from 'react';
 import TestUtils from 'react-addons-test-utils';
 import { expect } from 'chai';
 
-import TestableComponent from '../../src/components/TestableComponent';
+import InputArea from '../../src/components/InputArea';
 
 const { renderIntoDocument } = TestUtils;
 
-describe('TestableComponent', () => {
+describe('InputArea', () => {
   it('exists in document', () => {
-    const component = renderIntoDocument(<TestableComponent />);
+    const component = renderIntoDocument(<InputArea />);
 
     expect(component).to.exist;
   });

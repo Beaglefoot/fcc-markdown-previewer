@@ -1,36 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
-import { Provider, connect } from 'react-redux';
 
-import TestableComponent from './components/TestableComponent';
+import InputArea from './components/InputArea';
+import OutputArea from './components/OutputArea';
 
-require('./css/style.css');
-require('./css/style.scss');
+class App extends React.Component {
+  constructor(props) {
+    super(props);
 
-const store = createStore(() => ({
-  msg: 'Redux store is created'
-}));
+    this.state = { text: null };
+  }
 
-function ParentComponent(props) {
-  return (
-    <div>
-      <h1>freeCodeCamp React Boilerplate</h1>
-      <TestableComponent />
-      <p>{props.msg}</p>
-    </div>
-  );
+  render() {
+    return (
+      <div>
+        <InputArea onNewText={text => this.setState({ text })} />
+        <OutputArea textToRender={this.state.text} />
+      </div>
+    );
+  }
 }
-
-function mapStateToProps({ msg }) {
-  return { msg };
-}
-
-const ParentContainer = connect(mapStateToProps)(ParentComponent);
 
 ReactDOM.render(
-  <Provider store={store}>
-    <ParentContainer />
-  </Provider>,
+  <App />,
   document.querySelector('.container')
 );

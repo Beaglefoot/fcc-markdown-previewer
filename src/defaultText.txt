@@ -1,0 +1,16 @@
+### It's the first project in series of React Projects on [freeCodeCamp](http://freecodecamp.com/).
+
+The goal is to build a Markdown Previewer fulfilling the following user stories:
+1. I can type GitHub-flavored Markdown into a text area.
+1. I can see a preview of the output of my markdown that is updated as I type.
+
+You are allowed to use any library or API you need. I mainly used:
+* React
+* Webpack
+* Babel
+* [marked](https://cdnjs.com/libraries/marked)
+* Bootstrap
+
+along with others included in a [boilerplate](https://github.com/Beaglefoot/fcc-react-boilerplate) which was prepared for this series previously.
+
+![image](https://cdn-images-1.medium.com/fit/c/36/36/1*MotlWcSa2n6FrOx3ul89kw.png)

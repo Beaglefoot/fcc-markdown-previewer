@@ -26,6 +26,10 @@ module.exports = {
       {
         test: /\.s[ac]ss$/,
         loader: 'style!css!sass'
+      },
+      {
+        test: /\.txt$/,
+        loader: 'raw'
       }
     ]
   },

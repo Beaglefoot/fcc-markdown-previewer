@@ -1,12 +1,11 @@
 import React from 'react';
+import text from '../defaultText.txt';
 
 export default class InputArea extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      text: 'Dolor elit totam in consectetur voluptatum recusandae Reprehenderit excepturi quidem vitae ea nulla qui at. Delectus dolores sed obcaecati totam repellat quas Unde reiciendis nostrum similique alias amet Voluptatem laboriosam'
-    };
+    this.state = { text };
   }
 
   componentDidMount() {

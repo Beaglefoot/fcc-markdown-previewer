@@ -3,18 +3,22 @@ import ReactDOM from 'react-dom';
 
 import InputArea from './components/InputArea';
 import OutputArea from './components/OutputArea';
+import text from './defaultText.txt';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { text: '' };
+    this.state = { text };
   }
 
   render() {
     return (
       <div>
-        <InputArea onNewText={text => this.setState({ text })} />
+        <InputArea
+          text={this.state.text}
+          onNewText={text => this.setState({ text })}
+        />
         <OutputArea textToRender={this.state.text} />
       </div>
     );

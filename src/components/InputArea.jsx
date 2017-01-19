@@ -4,8 +4,7 @@ export default class InputArea extends React.Component {
   render() {
     return (
       <textarea
-        className="form-control"
-        rows="5"
+        rows="20"
         value={this.props.text}
         onChange={event => (
           this.props.onNewText(event.target.value)

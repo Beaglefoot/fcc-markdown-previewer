@@ -5,6 +5,8 @@ import InputArea from './components/InputArea';
 import OutputArea from './components/OutputArea';
 import text from './defaultText.txt';
 
+require('./css/style.scss');
+
 class App extends React.Component {
   constructor(props) {
     super(props);

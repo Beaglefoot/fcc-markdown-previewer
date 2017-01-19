@@ -1,9 +1,20 @@
 import React from 'react';
+import marked from 'marked';
 
-export default function OutputArea(props) {
-  return (
-    <div>
-      <p>{props.textToRender}</p>
-    </div>
-  );
+marked.setOptions({ sanitize: true });
+
+export default class OutputArea extends React.Component {
+  createMarkdown(markdownText) {
+    return {
+      __html: marked(markdownText)
+    };
+  }
+
+  render() {
+    return (
+      <div
+        dangerouslySetInnerHTML={this.createMarkdown(this.props.textToRender)}
+      />
+    );
+  }
 }

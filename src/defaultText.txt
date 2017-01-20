@@ -5,11 +5,11 @@ The goal is to build a Markdown Previewer fulfilling the following user stories:
 1. I can see a preview of the output of my markdown that is updated as I type.
 
 You are allowed to use any library or API you need. I mainly used:
-* React
-* Webpack
-* Babel
+* [React](https://facebook.github.io/react/)
+* [Webpack](https://webpack.github.io/)
+* [Babel](https://babeljs.io/)
 * [marked](https://cdnjs.com/libraries/marked)
-* Bootstrap
+* [Bootstrap](http://getbootstrap.com/)
 
 along with others included in a [boilerplate](https://github.com/Beaglefoot/fcc-react-boilerplate) which was prepared for this series previously.
 
